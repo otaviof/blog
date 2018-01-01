@@ -1,0 +1,40 @@
+---
+title: Silver-Horizon
+email: otaviof@gmail.com
+author: Otávio Fernandes
+description: >-
+  Personal blog to share opinions and chat about tech stuff. Have fun!
+url: https://otaviof.github.io
+baseurl: ""
+twitter_username: otaviof
+github_username: otaviof
+google_analytics: UA-111744883-1
+
+comments: true
+markdown: kramdown
+plugins:
+  - jekyll-archives
+  - jekyll-paginate
+  - jekyll-sitemap
+sass:
+  sass_dir: ./_saas
+
+excerpt_separator: "<!-- more -->"
+
+permalink: /:year/:month/:day/:title/
+paginate_path: /posts/:num/
+paginate: 3
+
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layout: category_archives
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
